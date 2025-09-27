@@ -1,0 +1,501 @@
+/* =============== Header Section =============== */
+header {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.header_logo a img {
+  width: 100%;
+}
+
+.search_bars {
+  display: flex;
+  gap: 15px;
+}
+
+.search img {
+  width: 24px;
+  cursor: pointer;
+}
+
+.bars img {
+  width: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 25px;
+}
+
+.navbar ul li a {
+  color: var(--dark-color);
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  position: relative;
+}
+.navbar ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background: var(--heading-color);
+  transition: 0.3s ease-in-out;
+}
+
+.navbar ul li a:hover::after {
+  width: 100%;
+}
+
+.header_input {
+  position: absolute;
+  top: -100%;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 100;
+  background-color: var(--hero-bg-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.header_input.active {
+  top: 55px;
+}
+
+.header_input input {
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.header_input img {
+  width: 24px;
+  cursor: pointer;
+}
+/* =============== Header Section End =============== */
+
+/* =============== Hero Section =============== */
+.hero {
+  height: 100vh;
+  background: var(--hero-bg-color);
+  overflow: hidden;
+}
+.hero p {
+  font-size: 24px;
+  color: #4f4f4f;
+}
+.hero_items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero_content {
+  display: flex;
+  flex-direction: column;
+}
+.hero_content h1 {
+  color: var(--heading-color);
+}
+.indonesia {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.indonesia_image {
+  display: flex;
+  gap: 50px;
+}
+
+.hero_image img {
+  width: 549px;
+  height: 973px;
+}
+/* =============== Hero Section End =============== */
+
+/* =============== Legalization Section =============== */
+.legalization {
+  background: var(--accent-light);
+  padding: 50px 0;
+}
+.legalization_items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+.legalization_contant1,
+.legalization_contant2 {
+  width: 50%;
+}
+.legalization_items .legalization_contant1 p {
+  line-height: 36px;
+  letter-spacing: 1.5px;
+}
+
+.legalization_contant2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.legalization_contant2_item {
+  display: flex;
+  gap: 20px;
+}
+
+.box {
+  width: 100%;
+  padding: 2rem;
+  background: var(--white-color);
+  border-radius: 10px;
+}
+.box h5 {
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+}
+/* =============== Legalization Section End =============== */
+
+/* =============== Some count that matters Section =============== */
+.some_count {
+  background: url("../img/some_count_bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.some_count_items h2 {
+  color: var(--white-color);
+}
+.some_count_items p {
+  color: var(--white-color);
+}
+
+.some_count_items .count {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+}
+.some_count_items .count h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  margin: 0;
+  line-height: 0;
+  margin-top: 50px;
+  padding-bottom: 10px;
+}
+
+.some_count_items .count p {
+  color: var(--white-color);
+}
+/* =============== Some count that matters Section End =============== */
+
+/* =============== Clients Testimonial Section =============== */
+.clients_testimonial {
+  padding: 50px 0;
+  background: var(--accent-lighter);
+}
+
+.clients_testimonial_items {
+  display: flex;
+  gap: 20px;
+}
+
+.clients_testimonial_items {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.clients_testimonial_contant_box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white-color);
+  padding: 20px 40px;
+  z-index: 1;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+.clients_testimonial_contant_box::before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: var(--white-color);
+  transform: rotate(45deg);
+  z-index: 0;
+}
+.clients_testimonial_contant_box h5 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.clients_testimonial_contant_profile {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.clients_testimonial_contant_profile img {
+  width: 50px;
+  height: 50px;
+}
+
+.clients_testimonial_contant_profile .name {
+  display: flex;
+  flex-direction: column;
+}
+.clients_testimonial_contant_profile .name h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  margin: 0;
+}
+.clients_testimonial_contant_profile .name p {
+  margin: 0;
+}
+/* =============== Clients Testimonial Section End =============== */
+
+/* =============== Complex Questions? Section =============== */
+.complex_questions_items {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.complex_contant {
+  width: 70%;
+}
+.complex_contant button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.complex_img {
+  width: 30%;
+}
+.complex_img img {
+  width: 100%;
+  height: auto;
+  border-radius: 0 0 0 50px;
+}
+/* =============== Complex Questions? Section End =============== */
+
+/* =============== Footer Section =============== */
+.footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: var(--heading-color);
+}
+.footer_items {
+  display: flex;
+}
+.footer_logo {
+  width: 50%;
+}
+.footer_contant {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_link {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer_link h3 {
+  color: var(--white-color);
+}
+.footer_link a {
+  color: var(--white-color);
+  transition: all 0.5s ease-in-out;
+}
+.footer_link a:hover {
+  color: var(--text-color);
+}
+
+.copyright {
+  padding: 10px 0;
+  background: #05546D;
+}
+.copyright_items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.copyright_items p {
+  color: var(--white-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+.copyright_social {
+  display: flex;
+  gap: 10px;
+}
+/* =============== Media Query =============== */
+@media (max-width: 1200px) {
+  .hero_image img {
+    width: 300px;
+    height: 600px;
+  }
+}
+
+@media (max-width: 992px) {
+  /* legalization */
+  .legalization_items {
+    flex-direction: column;
+  }
+  .legalization_contant1,
+  .legalization_contant2 {
+    width: 100%;
+  }
+  /* legalization end */
+  /* complex questions */
+
+  .complex_contant {
+    width: 50%;
+  }
+  .complex_img {
+    width: 50%;
+  }
+  /* complex questions end */
+  /* footer */
+  .footer {
+   margin-top: 50px;
+  }
+  .footer_items {
+    flex-direction: column;
+  }
+  .footer_logo {
+    width: 100%;
+  }
+  .footer_contant {
+    width: 100%;
+  }
+  .footer_link {
+   margin-bottom: 20px;
+  }
+  .footer_m_none {
+    margin: 0;
+  }
+  /* footer end */
+}
+
+@media (max-width: 768px) {
+  /* Header */
+  .navbar {
+    position: absolute;
+    top: 58px;
+    left: -100%;
+    background: var(--white-color);
+    z-index: 100;
+    width: 250px;
+    height: 40vh;
+    padding: 15px;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .navbar.active {
+    left: 0;
+  }
+  .navbar ul {
+    flex-direction: column;
+  }
+  .bars img {
+    display: block;
+  }
+
+  /* header end */
+
+  /* hero Start*/
+  .hero {
+    padding-top: 50px;
+    height: inherit;
+  }
+  .hero_items {
+    flex-direction: column;
+  }
+  .hero_image img {
+    width: 100%;
+    height: auto;
+  }
+  /* hero end */
+
+  /* clients testimonial */
+  .clients_testimonial_items {
+    flex-direction: column;
+  }
+  /* clients testimonial end */
+
+  /* complex questions */
+  .complex_questions_items {
+    flex-direction: column-reverse;
+  }
+
+  .complex_contant {
+    width: 100%;
+  }
+  .complex_img {
+    width: 100%;
+  }
+  /* complex questions end */
+}
+
+@media (max-width: 425px) {
+  /* legalization */
+  .legalization_contant2_item {
+    flex-direction: column;
+  }
+  /* legalization end */
+
+  /* footer */
+  .footer_contant {
+    flex-direction: column;
+  }
+
+  .copyright_items {
+    flex-direction: column;
+  }
+  /* footer end */
+}

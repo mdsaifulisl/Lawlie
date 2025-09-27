@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* CSS Colors */
+:root {
+  --white-color: #ffffff;
+  --dark-color: #2d2f30;
+  --hero-bg-color: #f9f8f9;
+  --heading-color: #094b72;
+  --text-color: #999999;
+  --accent-light: #F2FCFF;
+  --accent-lighter: #F4FBFF; 
+}
+
+
+/* 
+font-family: "Roboto", sans-serif;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'playfair display', sans-serif;
+  background-color: var(--white-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 1rem 0;
+}
+
+h1 {
+  font-size: 90px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+p {
+  margin: 1rem 0;
+  font-size: 20px;
+}
+.p{
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+/*  */
+.text_center{
+    text-align: center;
+}
+/* ==================================== */
+
+/* Button */
+.button {
+  background: var(--heading-color);
+  color: var(--white-color);
+  padding: 20px 40px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* =============== Media Query =============== */
+
+/* 1200px */
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+}
+
+
+/* 992px */
+@media (max-width: 992px) {
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+}
+
+
+
+/* 768px */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+}
