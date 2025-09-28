@@ -6,7 +6,6 @@
     margin-left: auto;
   }
   
-  /* Breakpoints এর জন্য Bootstrap এর মতো max-width */
   @media (min-width: 576px) {
     .container {
       max-width: 540px;
@@ -36,4 +35,5 @@
       max-width: 1320px;
     }
   }
+
   
