@@ -6,10 +6,13 @@ const header_input = document.querySelector(".header_input");
 
 bars.addEventListener("click", () => {
   navbar.classList.toggle("active");
+  header_input.classList.remove("active");
 });
 search.addEventListener("click", () => {
   header_input.classList.toggle("active");
+  navbar.classList.remove("active");
 });
+
 window.addEventListener("scroll", () => {
   if (window.scrollY > 100) {
     navbar.classList.remove("active");
@@ -57,3 +60,4 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(counter);
   });
 });
+
